@@ -1,0 +1,177 @@
+/* Start Variables */
+:root {
+    font-size: 10px;
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+/* End Variables */
+/* Start Main Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 576px) {
+    .container {
+    max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+    max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+    max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+    max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+    max-width: 1320px;
+    }
+}
+/* End Main Rules */
+/* Start Four card feature section */
+main {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .card-feature .text {
+    text-align: center;
+}
+main .card-feature .text h1 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 200;
+    font-size: 3.6rem;
+}
+main .card-feature .text h2 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 3.6rem;
+    padding-bottom: 1.6rem;
+}
+main .card-feature .text h3 {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    font-weight: normal;
+    width: 46%;
+    margin: auto;
+}
+@media (max-width: 767px) {
+    main .card-feature .text h1,
+    main .card-feature .text h2 {
+        font-size: 2.4rem;
+    }
+    main .card-feature .text h3 {
+        width: 88%;
+    }
+}
+main .card-feature .feat-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    padding-top: 6.4rem;
+}
+@media (max-width: 991px) {
+    main .card-feature .feat-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    main .card-feature .feat-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+main .card-feature .feat-content .feat {
+    height: 25rem;
+    padding: 3.2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    position: relative;
+}
+main .card-feature .feat-content .feat h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+main .card-feature .feat-content .feat p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: var(--Very-Dark-Blue);
+    opacity: 0.5;
+    padding-top: 0.6rem;
+    padding-bottom: 4.5rem;
+}
+main .card-feature .feat-content .feat img {
+    width: 6.4rem;
+    height: 6.4rem;
+    display: flex;
+    margin-left: auto;
+}
+main .card-feature .feat-content .feat1 {
+    border-radius: 0.5rem;
+    border-top: 0.5rem solid var(--Cyan);
+}
+main .card-feature .feat-content .feat2 {
+    border-radius: 0.5rem;
+    border-top: 0.5rem solid var(--Red);
+}
+main .card-feature .feat-content .feat3 {
+    border-radius: 0.5rem;
+    border-top: 0.5rem solid var(--Orange);
+}
+main .card-feature .feat-content .feat4 {
+    border-radius: 0.5rem;
+    border-top: 0.5rem solid var(--Blue);
+}
+main .card-feature .feat-content .feat1,
+main .card-feature .feat-content .feat4 {
+    position: relative;
+    top: 50%;
+}
+main .card-feature .feat-content .feat3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+@media (max-width: 991px) {
+    main .card-feature .feat-content .feat1,
+    main .card-feature .feat-content .feat4 {
+    top: 0;
+    }
+    main .card-feature .feat-content .feat3 {
+    grid-column: auto;
+    grid-row: auto;
+    }
+}
+/* End Four card feature section */
+
